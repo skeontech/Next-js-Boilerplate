@@ -38,6 +38,7 @@
     "@t3-oss/env-nextjs": "^0.11.1",
     "crypto-browserify": "^3.12.1",
     "drizzle-orm": "^0.38.0",
+    "http-browserify": "^1.7.0",
     "net-browserify": "^0.2.4",
     "next": "^15.1.0",
     "next-intl": "^3.26.0",

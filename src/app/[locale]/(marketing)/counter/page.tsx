@@ -5,6 +5,8 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { Suspense } from 'react';
 
+export const runtime = 'edge';
+
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
 }) {

@@ -2,6 +2,8 @@ import { getI18nPath } from '@/utils/Helpers';
 import { UserProfile } from '@clerk/nextjs';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+export const runtime = 'edge';
+
 type IUserProfilePageProps = {
   params: Promise<{ locale: string }>;
 };

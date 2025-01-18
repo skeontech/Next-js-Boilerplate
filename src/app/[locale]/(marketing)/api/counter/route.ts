@@ -6,6 +6,8 @@ import { sql } from 'drizzle-orm';
 import { headers } from 'next/headers';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 export const PUT = async (request: Request) => {
   const json = await request.json();
   const parse = CounterValidation.safeParse(json);

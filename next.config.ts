@@ -22,7 +22,7 @@ export default withSentryConfig(
           // }
         }
     
-        config.resolve.fallback = { fs: false, path: false, stream: false, crypto: false, net: false };
+        config.resolve.fallback = { fs: false, path: false, stream: false, crypto: false, net: false, tls: false };
     
         return config
       },

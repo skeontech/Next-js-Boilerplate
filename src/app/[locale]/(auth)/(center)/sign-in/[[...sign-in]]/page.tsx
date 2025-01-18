@@ -2,6 +2,8 @@ import { getI18nPath } from '@/utils/Helpers';
 import { SignIn } from '@clerk/nextjs';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+export const runtime = 'edge';
+
 type ISignInPageProps = {
   params: Promise<{ locale: string }>;
 };

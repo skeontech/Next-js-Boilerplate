@@ -22,7 +22,23 @@ export default withSentryConfig(
           // }
         }
 
-        config.resolve.fallback = { http: require.resolve('http-browserify'), fs: false, path: require.resolve('path-browserify'), stream: require.resolve('stream-browserify'), crypto: require.resolve('crypto-browserify'), net: require.resolve('net-browserify'), tls: require.resolve('tls-browserify'), dns: false, worker_threads: false, tty: require.resolve('tty-browserify') };
+        config.resolve.fallback = {
+          assert: require.resolve('assert'),
+          http: require.resolve('stream-http'),
+          https: require.resolve('https-browserify'),
+          os: require.resolve('os-browserify'),
+          url: require.resolve('url'),
+          zlib: require.resolve('browserify-zlib'),
+          fs: false,
+          path: require.resolve('path-browserify'),
+          stream: require.resolve('stream-browserify'),
+          crypto: require.resolve('crypto-browserify'),
+          net: require.resolve('net-browserify'),
+          tls: require.resolve('tls-browserify'),
+          dns: false,
+          worker_threads: false,
+          tty: require.resolve('tty-browserify'),
+        };
 
         return config;
       },

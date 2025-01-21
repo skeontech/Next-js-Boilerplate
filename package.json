@@ -46,12 +46,14 @@
     "pg": "^8.13.1",
     "pino": "^9.5.0",
     "pino-pretty": "^13.0.0",
+    "querystring": "^0.2.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hook-form": "^7.54.0",
     "stream-browserify": "^3.0.0",
     "tls-browserify": "^0.2.2",
     "tty-browserify": "^0.0.1",
+    "zlib": "^1.0.5",
     "zod": "^3.24.0"
   },
   "devDependencies": {
